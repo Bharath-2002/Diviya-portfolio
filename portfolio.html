@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f3f3f3, #e0e0e0);
+            line-height: 1.8;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: right;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+        .nav a:hover {
+            background-color: #666;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #ccc;
+        }
+        .project:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .project-text {
+            width: 55%;
+        }
+        .project img {
+            width: 40%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="header">
+        <h1>Portfolio</h1>
+    </div>
+    <div class="container">
+        <h2>Projects</h2>
+        
+        <div class="project">
+            <div class="project-text">
+                <h3>Eco Printing Portfolio</h3>
+                <h4>Introduction</h4>
+                <p>Eco-printing is a sustainable textile design technique that uses natural leaves, flowers, and plant materials to create unique patterns on fabrics. This process eliminates the need for synthetic dyes, reducing environmental pollution.</p>
+                <h4>Techniques Used</h4>
+                <p>The project explored multiple eco-printing techniques, including bundle dyeing, steaming, and immersion methods. Experimentation with different mordants was conducted to enhance color vibrancy and longevity.</p>
+                <h4>Impact on Sustainable Fashion</h4>
+                <p>By implementing eco-printing, this project demonstrated an innovative approach to sustainable fashion, providing an alternative to chemical-based dyeing methods while promoting the use of biodegradable materials.</p>
+            </div>
+            <img src="ai_generated_eco_printing.png" alt="Eco Printing Project">
+        </div>
+        
+        <div class="project">
+            <div class="project-text">
+                <h3>Development of Cosmetotextile Component for Skin Protection</h3>
+                <h4>Concept</h4>
+                <p>Cosmetotextiles integrate cosmetic and skincare benefits into fabrics, allowing garments to provide hydration, UV protection, and skin nourishment while being worn. This project focused on creating functional textiles infused with natural skincare agents.</p>
+                <h4>Materials & Techniques</h4>
+                <p>Various natural ingredients, such as aloe vera, vitamin E, and herbal extracts, were tested for their compatibility with textile fibers. Microencapsulation technology was employed to ensure long-lasting effects.</p>
+                <h4>Future Applications</h4>
+                <p>The research showcased the potential of cosmetotextiles in personal care, sportswear, and medical applications. The findings contribute to the evolving field of wearable skincare solutions.</p>
+            </div>
+            <img src="ai_generated_cosmetotextile.png" alt="Cosmetotextile Project">
+        </div>
+    </div>
+</body>
+</html>
