@@ -3,66 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Diviya Sivakumar</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #f3f3f3, #e0e0e0);
             line-height: 1.8;
+            color: #333;
         }
         .header {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 2rem 1rem;
         }
         .nav {
             background-color: #444;
-            padding: 10px;
+            padding: 0.8rem 1rem;
             text-align: right;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         .nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 0.8rem 1.5rem;
             display: inline-block;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
         }
         .nav a:hover {
             background-color: #666;
         }
         .container {
-            width: 60%;
-            margin: 40px auto;
-            padding: 40px 20px;
+            width: 90%;
+            max-width: 800px;
+            margin: 2.5rem auto;
+            padding: 2.5rem 1.5rem;
             background: white;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
         .contact-info {
-            font-size: 20px;
-            margin-bottom: 20px;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
         }
         .contact-info a {
             color: #333;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            transition: color 0.3s;
         }
         .contact-info a:hover {
             color: #555;
         }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 2rem 0;
+        }
         .message {
-            margin-top: 30px;
-            font-size: 18px;
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
             color: #666;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .nav {
+                text-align: center;
+                padding: 0.5rem;
+            }
+            .nav a {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+            .header {
+                padding: 1.5rem 1rem;
+            }
+            .container {
+                width: 95%;
+                padding: 2rem 1rem;
+                margin: 2rem auto;
+            }
+            .contact-info {
+                font-size: 1.1rem;
+            }
+            .message {
+                font-size: 1rem;
+            }
+        }
+
+        /* Tablet Adjustments */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                width: 85%;
+                padding: 2.2rem 1.2rem;
+            }
+            .contact-info {
+                font-size: 1.2rem;
+            }
+            .message {
+                font-size: 1.05rem;
+            }
+            .nav a {
+                padding: 0.7rem 1.2rem;
+            }
         }
     </style>
 </head>
 <body>
-    
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -75,7 +134,7 @@
     <div class="container">
         <p class="contact-info">Email: <a href="mailto:diviyasivakumarks@gmail.com">diviyasivakumarks@gmail.com</a></p>
         <p class="contact-info">Phone: +91 9600426654</p>
-        <p class="contact-info">LinkedIn: <a href="https://www.linkedin.com/in/diviya-sivakumar-" target="_blank">Diviya Sivakumar</a></p>
+        <p class="contact-info">LinkedIn: <a href="https://www.linkedin.com/in/diviya-sivakumar-723b55266" target="_blank">Diviya Sivakumar</a></p>
         
         <hr>
         
